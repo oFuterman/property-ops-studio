@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #1B2A4A;
+  --color-navy-light: #243560;
+  --color-blue: #2563EB;
+  --color-blue-light: #3B82F6;
+  --color-blue-pale: #EFF6FF;
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+  --color-indigo-50: #EEF2FF;
+  --color-indigo-400: #818CF8;
+  --color-indigo-500: #6366F1;
+  --color-white: #FFFFFF;
+  --font-sans: var(--font-geist-sans);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-slate-800);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Skip-to-content link — visible only on keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--color-navy);
+  color: white;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
