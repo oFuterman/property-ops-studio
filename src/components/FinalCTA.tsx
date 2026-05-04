@@ -4,11 +4,11 @@ export default function FinalCTA() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-navy px-6 py-20 sm:py-28">
       <div
-        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue/10 blur-3xl"
+        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-teal-400/15 blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -bottom-20 -left-20 h-60 w-60 rounded-full bg-indigo-400/10 blur-3xl"
+        className="pointer-events-none absolute -bottom-20 -left-20 h-60 w-60 rounded-full bg-blue/10 blur-3xl"
         aria-hidden="true"
       />
       <div className="mx-auto max-w-3xl text-center">

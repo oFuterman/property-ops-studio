@@ -22,7 +22,7 @@ export default function Results() {
         <div className="mt-14 grid gap-8 sm:grid-cols-3">
           {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="bg-gradient-to-r from-blue to-indigo-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+              <p className="bg-gradient-to-r from-blue to-teal-400 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
                 {stat.value}
               </p>
               <p className="mt-2 text-sm font-medium text-slate-500">
@@ -33,7 +33,7 @@ export default function Results() {
         </div>
 
         {/* Case narrative */}
-        <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-blue-pale/30 p-8 sm:p-10">
+        <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 via-blue-pale/20 to-teal-pale/30 p-8 sm:p-10">
           <h3 className="text-xl font-semibold text-navy">
             From manual handoffs to fully automated tenant operations
           </h3>

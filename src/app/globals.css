@@ -16,9 +16,16 @@
   --color-slate-700: #334155;
   --color-slate-800: #1E293B;
   --color-slate-900: #0F172A;
-  --color-indigo-50: #EEF2FF;
-  --color-indigo-400: #818CF8;
-  --color-indigo-500: #6366F1;
+  --color-teal-300: #5EEAD4;
+  --color-teal-400: #2DD4BF;
+  --color-teal-500: #14B8A6;
+  --color-teal-pale: #F0FDFA;
+  --color-lavender-200: #DDD6FE;
+  --color-lavender-300: #C4B5FD;
+  --color-lavender-400: #A78BFA;
+  --color-amber-200: #FDE68A;
+  --color-amber-300: #FCD34D;
+  --color-amber-400: #FBBF24;
   --color-white: #FFFFFF;
   --font-sans: var(--font-geist-sans);
 }

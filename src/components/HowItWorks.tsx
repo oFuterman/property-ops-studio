@@ -39,7 +39,7 @@ export default function HowItWorks() {
           {STEPS.map((step) => (
             <div key={step.number} className="relative rounded-2xl border border-slate-100 bg-slate-50/50 p-8">
               <span
-                className="bg-gradient-to-br from-blue/25 to-indigo-400/15 bg-clip-text text-6xl font-extrabold text-transparent"
+                className="bg-gradient-to-br from-blue/30 to-teal-400/25 bg-clip-text text-6xl font-extrabold text-transparent"
                 aria-hidden="true"
               >
                 {step.number}
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-gradient-to-r from-blue to-blue-light px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue/25 transition-all hover:shadow-xl hover:shadow-blue/30 hover:brightness-110"
+            className="inline-flex rounded-full bg-gradient-to-r from-blue to-teal-500 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue/25 transition-all hover:shadow-xl hover:shadow-blue/30 hover:brightness-110"
           >
             Book Your Free Audit
           </a>
