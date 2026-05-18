@@ -39,16 +39,16 @@ export default function CustomSystems() {
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
               Some problems can&rsquo;t be solved with a better AppFolio
               configuration. When your operation needs a system that
-              doesn&rsquo;t exist yet, we build it from scratch &mdash;
-              tailored to your workflows, your team, and the way you
-              actually manage properties.
+              doesn&rsquo;t exist yet, we build it from scratch. Tailored
+              to your workflows, your team, and the way you actually
+              manage properties.
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
-              Every manual step your team repeats &mdash; chasing updates,
-              copying data, sending the same emails &mdash; becomes something
-              the system handles on its own. You get a tool that works
-              exactly the way you need it to, because it was designed
-              around your operation from day one.
+              Every manual step your team repeats becomes something the
+              system handles on its own. Chasing updates, copying data,
+              sending the same emails. You get a tool that works exactly
+              the way you need it to, because it was designed around your
+              operation from day one.
             </p>
             <div className="mt-8">
               <a
