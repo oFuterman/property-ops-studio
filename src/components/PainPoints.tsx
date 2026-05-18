@@ -46,7 +46,7 @@ export default function PainPoints() {
             Sound familiar?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">
-            These problems cost property managers thousands a month &mdash; and
+            These problems cost property managers thousands a month.. and
             most don&rsquo;t even realize it until someone looks.
           </p>
         </div>

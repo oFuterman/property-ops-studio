@@ -22,7 +22,7 @@ export default function About() {
           </h2>
           <p className="mt-6 leading-relaxed text-slate-600">
             I&rsquo;m Omer Futerman, founder of Property Ops Studio. I got into
-            this work the way most good ideas start &mdash; by solving a real
+            this work the way most good ideas start: by solving a real
             problem for a real company.
           </p>
           <p className="mt-4 leading-relaxed text-slate-600">
@@ -35,7 +35,7 @@ export default function About() {
           <p className="mt-4 leading-relaxed text-slate-600">
             So I built the integrations, automated the workflows, and tightened
             the operations. Now I do the same thing for other property
-            management companies &mdash; find what&rsquo;s leaking, fix it, and
+            management companies, I find what&rsquo;s leaking, fix it, and
             set up systems that actually work without babysitting.
           </p>
           <p className="mt-6 font-medium text-navy">

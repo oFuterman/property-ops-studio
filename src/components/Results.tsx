@@ -43,7 +43,7 @@ export default function Results() {
               tenants on AppFolio was handling tenant onboarding and internet
               provisioning entirely by hand. Property managers were manually
               creating credentials, sending welcome emails, and coordinating
-              offboarding &mdash; across every single move-in and move-out.
+              offboarding across every single move-in and move-out.
             </p>
             <p>
               We designed and built an integration between their AppFolio

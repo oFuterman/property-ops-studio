@@ -5,13 +5,13 @@ const STEPS = [
     number: "01",
     title: "Book a free call",
     description:
-      "A 30-minute conversation where we walk through your current setup — AppFolio configuration, bank workflows, maintenance process, and reporting. No pitch, just diagnosis.",
+      "A 30-minute conversation where we walk through your current setup. AppFolio configuration, bank workflows, maintenance process, and reporting. No pitch, just diagnosis.",
   },
   {
     number: "02",
     title: "We audit your operations",
     description:
-      "We map every system, identify where money and time are leaking, and build a prioritized list of what to fix first — ranked by dollar impact.",
+      "We map every system, identify where money and time are leaking, and build a prioritized list of what to fix first.",
   },
   {
     number: "03",

@@ -4,12 +4,12 @@ const CAPABILITIES = [
   {
     title: "Built around your process",
     description:
-      "We study how your team actually works — then design a system that matches, not the other way around.",
+      "We study how your team actually works, then design a system that matches, not the other way around.",
   },
   {
     title: "Automate the repetitive stuff",
     description:
-      "Follow-ups, status updates, task assignments, owner communications — if your team does it by hand, we make it automatic.",
+      "Follow-ups, status updates, task assignments, owner communications: if your team does it by hand, we make it automatic.",
   },
   {
     title: "Connects to what you already use",
