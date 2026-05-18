@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import HowItWorks from "@/components/HowItWorks";
 import WhatWeFix from "@/components/WhatWeFix";
+import CustomSystems from "@/components/CustomSystems";
 import Results from "@/components/Results";
 import About from "@/components/About";
 import FinalCTA from "@/components/FinalCTA";
@@ -43,6 +44,7 @@ export default function Home() {
         <PainPoints />
         <HowItWorks />
         <WhatWeFix />
+        <CustomSystems />
         <Results />
         <About />
         <FinalCTA />
