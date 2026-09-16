@@ -1,7 +1,7 @@
 const SERVICES = [
   {
     title: "Bank reconciliation",
-    description: "Streamline your monthly close from days to hours with clean transaction matching and automated bank imports.",
+    description: "Bring commercial banking data into your reconciliation process through bank APIs, BAI2 files, and CSV imports tailored to your operation.",
   },
   {
     title: "Tenant onboarding",
