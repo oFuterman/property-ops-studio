@@ -5,5 +5,5 @@ export const SITE = {
   tagline: "AppFolio Operations Consulting",
   url: "https://propertyopsstudio.com",
   description:
-    "We find the money leaks, time sinks, and broken workflows hiding in your property management operations. Free audit for AppFolio-powered companies managing 100-1,000 units.",
+    "AppFolio operations consulting for property management companies. Improve workflows, connect systems, and build reporting around the way your team works.",
 } as const;

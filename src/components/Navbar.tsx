@@ -57,9 +57,9 @@ export default function Navbar() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gradient-to-r from-blue to-teal-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md hover:brightness-110"
+            className="rounded-sm bg-ink px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
           >
-            Book Your Free Audit
+            Schedule a conversation
           </a>
         </div>
 
@@ -100,9 +100,9 @@ export default function Navbar() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 rounded-full bg-gradient-to-r from-blue to-teal-500 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+              className="mt-2 rounded-sm bg-ink px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
             >
-              Book Your Free Audit
+              Schedule a conversation
             </a>
           </div>
         </div>

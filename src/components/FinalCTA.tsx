@@ -13,25 +13,24 @@ export default function FinalCTA() {
       />
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Find out what your operations are really costing you.
+          Bring your next operational improvement into focus.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
-          Book a free 30-minute audit call. We&rsquo;ll walk through your
-          AppFolio setup together and show you exactly where you&rsquo;re
-          leaving money on the table.
+          Tell us what your team is trying to accomplish. We&rsquo;ll talk through
+          the workflow, the systems involved, and the most practical next step.
         </p>
         <div className="mt-10">
           <a
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-white px-8 py-3.5 text-base font-semibold text-navy shadow-md transition-all hover:bg-slate-100 hover:shadow-lg"
+            className="inline-flex rounded-sm bg-gold px-8 py-3.5 text-base font-semibold text-ink shadow-md transition-colors hover:bg-gold-light"
           >
-            Book Your Free Audit
+            Schedule a conversation
           </a>
         </div>
         <p className="mt-6 text-sm text-slate-400">
-          No contracts. No pressure. Just a clear look at your operations.
+          A straightforward conversation about your operation—no pressure.
         </p>
       </div>
     </section>

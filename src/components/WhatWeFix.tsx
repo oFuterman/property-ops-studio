@@ -5,27 +5,27 @@ const SERVICES = [
   },
   {
     title: "Tenant onboarding",
-    description: "Automate welcome emails, credential delivery, and lease setup so new tenants are live without manual work.",
+    description: "Create customized move-in emails for each property and resident, including everything they need—from digital packets and access instructions to private Wi-Fi credentials and more.",
   },
   {
     title: "Maintenance triage",
-    description: "Route requests to the right vendor automatically, track status, and close the loop with tenants.",
+    description: "Build on Realm-X with company-specific oversight. Surface important work orders, alert the right team, and keep critical issues moving through completion.",
   },
   {
     title: "Owner reporting",
     description: "Deliver clear, on-time owner statements and KPI dashboards that build trust and reduce support calls.",
   },
   {
-    title: "Fee collection gaps",
-    description: "Catch missed late fees, pet deposits, utility reimbursements, and move-out charges before they add up.",
+    title: "Cross-System Reconciliation",
+    description: "Compare AppFolio billing with third-party service activity to uncover missing or mismatched charges before revenue is missed.",
   },
   {
     title: "AppFolio optimization",
     description: "Configure workflows, automations, and integrations so your team spends less time in the software and more time managing doors.",
   },
   {
-    title: "Vendor payments",
-    description: "Eliminate duplicate payments, clean up vendor records, and tighten approval workflows.",
+    title: "Incident escalation",
+    description: "Ensure high-priority resident concerns reach management and follow the required reporting process before they become larger legal or operational risks.",
   },
   {
     title: "Rent increase calendars",

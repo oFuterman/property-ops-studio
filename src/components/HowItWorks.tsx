@@ -3,21 +3,21 @@ import { CALENDLY_URL } from "@/lib/constants";
 const STEPS = [
   {
     number: "01",
-    title: "Book a free call",
+    title: "Start with the operation",
     description:
-      "A 30-minute conversation where we walk through your current setup. AppFolio configuration, bank workflows, maintenance process, and reporting. No pitch, just diagnosis.",
+      "We talk through the process, the people involved, and where AppFolio connects with the rest of your operating environment.",
   },
   {
     number: "02",
-    title: "We audit your operations",
+    title: "Map the practical improvement",
     description:
-      "We map every system, identify where money and time are leaking, and build a prioritized list of what to fix first.",
+      "We identify the best-fit change—configuration, workflow design, reporting, automation, or a custom integration.",
   },
   {
     number: "03",
-    title: "You get fixes, not a PDF",
+    title: "Put the solution to work",
     description:
-      "We don't hand you a report and walk away. The top issues get fixed during the audit engagement. You walk away with real changes already live in your systems.",
+      "We implement, test, and document the agreed improvement so your team can use it confidently in day-to-day operations.",
   },
 ] as const;
 
@@ -30,8 +30,7 @@ export default function HowItWorks() {
             How it works
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">
-            Three steps from &ldquo;something feels off&rdquo; to
-            &ldquo;we&rsquo;re running tighter than ever.&rdquo;
+            A focused path from an operational need to a working improvement.
           </p>
         </div>
 
@@ -59,9 +58,9 @@ export default function HowItWorks() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex rounded-full bg-gradient-to-r from-blue to-teal-500 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue/25 transition-all hover:shadow-xl hover:shadow-blue/30 hover:brightness-110"
+            className="inline-flex rounded-sm bg-ink px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-colors hover:bg-navy-light"
           >
-            Book Your Free Audit
+            Schedule a conversation
           </a>
         </div>
       </div>

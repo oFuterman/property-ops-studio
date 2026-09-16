@@ -28,19 +28,19 @@ export default function About() {
           <p className="mt-4 leading-relaxed text-slate-600">
             I spent the last year embedded in a property management operation
             running 850+ doors across five properties on AppFolio. I saw
-            firsthand how much time and money gets lost in manual workflows,
-            disconnected systems, and configurations that were never set up
-            right in the first place.
+            firsthand where property teams benefit from clearer workflows,
+            connected systems, and configurations that reflect how the
+            operation actually runs.
           </p>
           <p className="mt-4 leading-relaxed text-slate-600">
             So I built the integrations, automated the workflows, and tightened
             the operations. Now I do the same thing for other property
-            management companies, I find what&rsquo;s leaking, fix it, and
-            set up systems that actually work without babysitting.
+            management companies, helping AppFolio work smoothly alongside the
+            systems, reporting needs, and processes unique to each operation.
           </p>
           <p className="mt-6 font-medium text-navy">
-            If your AppFolio setup feels like it&rsquo;s working against you
-            instead of for you, let&rsquo;s talk.
+            If your team has an AppFolio workflow that could be clearer,
+            faster, or better connected, let&rsquo;s talk.
           </p>
         </div>
       </div>
