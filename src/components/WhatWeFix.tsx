@@ -12,8 +12,8 @@ const SERVICES = [
     description: "Build on Realm-X with company-specific oversight. Surface important work orders, alert the right team, and keep critical issues moving through completion.",
   },
   {
-    title: "Owner reporting",
-    description: "Deliver clear, on-time owner statements and KPI dashboards that build trust and reduce support calls.",
+    title: "Custom owner reporting",
+    description: "Turn AppFolio financial data into tailored owner reports, including clearer distribution analysis that standard reports may not provide.",
   },
   {
     title: "Cross-System Reconciliation",
