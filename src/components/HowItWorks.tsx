@@ -56,8 +56,6 @@ export default function HowItWorks() {
         <div className="mt-14 text-center">
           <a
             href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex rounded-sm bg-ink px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-colors hover:bg-navy-light"
           >
             Schedule a conversation

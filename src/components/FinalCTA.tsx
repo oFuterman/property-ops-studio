@@ -22,8 +22,6 @@ export default function FinalCTA() {
         <div className="mt-10">
           <a
             href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex rounded-sm bg-gold px-8 py-3.5 text-base font-semibold text-ink shadow-md transition-colors hover:bg-gold-light"
           >
             Schedule a conversation

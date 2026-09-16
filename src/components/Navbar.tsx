@@ -2,14 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CALENDLY_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "What We Fix", href: "#what-we-fix" },
-  { label: "Custom Systems", href: "#custom-systems" },
-  { label: "Results", href: "#results" },
-  { label: "About", href: "#about" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "What We Fix", href: "/#what-we-fix" },
+  { label: "Custom Systems", href: "/#custom-systems" },
+  { label: "Results", href: "/#results" },
+  { label: "About", href: "/#about" },
 ] as const;
 
 export default function Navbar() {
@@ -32,7 +33,7 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="flex shrink-0 items-center">
+        <Link href="/" className="flex shrink-0 items-center">
           <Image
             src="/images/logo.webp"
             alt="Property Ops Studio"
@@ -41,7 +42,7 @@ export default function Navbar() {
             className="h-11 w-auto"
             priority
           />
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
@@ -55,8 +56,6 @@ export default function Navbar() {
           ))}
           <a
             href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="rounded-sm bg-ink px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
           >
             Schedule a conversation
@@ -98,8 +97,6 @@ export default function Navbar() {
             ))}
             <a
               href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
               className="mt-2 rounded-sm bg-ink px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
             >
               Schedule a conversation

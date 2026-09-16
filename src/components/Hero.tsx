@@ -1,5 +1,3 @@
-import { CALENDLY_URL } from "@/lib/constants";
-
 const EXPERTISE = [
   "AppFolio workflow review",
   "Custom integrations",
@@ -34,16 +32,8 @@ export default function Hero() {
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-sm bg-gold px-7 py-3.5 text-base font-semibold text-ink shadow-lg shadow-black/20 transition-colors hover:bg-gold-light"
-            >
-              Talk through your operations
-            </a>
-            <a
               href="#what-we-fix"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-7 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold/70 hover:text-gold-light"
+              className="inline-flex items-center justify-center gap-2 rounded-sm bg-gold px-7 py-3.5 text-base font-semibold text-ink shadow-lg shadow-black/20 transition-colors hover:bg-gold-light"
             >
               Explore how we help
               <span aria-hidden="true">→</span>

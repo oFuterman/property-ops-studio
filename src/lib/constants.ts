@@ -1,4 +1,5 @@
-export const CALENDLY_URL = "https://calendly.com/omerfu" as const;
+export const CALENDLY_URL = "/schedule" as const;
+export const CALENDLY_EMBED_URL = "https://calendly.com/omerfu" as const;
 
 export const SITE = {
   name: "Property Ops Studio",

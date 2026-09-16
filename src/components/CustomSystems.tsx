@@ -53,8 +53,6 @@ export default function CustomSystems() {
             <div className="mt-8">
               <a
                 href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex rounded-full bg-gradient-to-r from-blue to-teal-500 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue/25 transition-all hover:shadow-xl hover:shadow-blue/30 hover:brightness-110"
               >
                 Tell Us What You Need
