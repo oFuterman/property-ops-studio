@@ -7,6 +7,7 @@ import { CALENDLY_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
   { label: "How It Works", href: "/#how-it-works" },
+  { label: "Services", href: "/services" },
   { label: "What We Fix", href: "/#what-we-fix" },
   { label: "Custom Systems", href: "/#custom-systems" },
   { label: "Results", href: "/#results" },

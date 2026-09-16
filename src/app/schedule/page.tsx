@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Choose a convenient time to discuss your AppFolio operations with Property Ops Studio.",
 };
 
-const embedUrl = `${CALENDLY_EMBED_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=0b1828&primary_color=b78a43`;
+const embedUrl = `${CALENDLY_EMBED_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=1e2325&primary_color=105ab6`;
 
 export default function SchedulePage() {
   return (
@@ -18,7 +18,7 @@ export default function SchedulePage() {
       <main id="main" className="min-h-screen bg-slate-50 px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-light">
               Schedule a conversation
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-ink sm:text-5xl">

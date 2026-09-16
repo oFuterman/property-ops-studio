@@ -44,7 +44,7 @@ export default function About() {
               faster, or better connected, let&rsquo;s talk.
             </p>
 
-            <div className="mt-8 border-l-2 border-gold pl-5">
+            <div className="mt-8 border-l-2 border-blue pl-5">
               <p className="font-semibold text-navy">Contact Omer</p>
               <a
                 href="mailto:omerfu@gmail.com"
@@ -81,7 +81,7 @@ export default function About() {
 
         <div className="mt-20 border-t border-slate-200 pt-14">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue">
               Operations and professional perspective
             </p>
             <h3 className="mt-3 text-3xl font-bold tracking-tight text-navy">
@@ -90,9 +90,9 @@ export default function About() {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-3">
-            <article className="border-l-2 border-gold pl-6">
+            <article className="border-l-2 border-blue pl-6">
               <h4 className="text-xl font-bold text-navy">Ron Nasch</h4>
-              <p className="mt-1 font-semibold text-gold">
+              <p className="mt-1 font-semibold text-blue">
                 Senior Property Operations Advisor
               </p>
               <p className="mt-4 leading-relaxed text-slate-600">

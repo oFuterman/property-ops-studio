@@ -1,5 +1,3 @@
-import { CALENDLY_URL } from "@/lib/constants";
-
 const STEPS = [
   {
     number: "01",
@@ -11,13 +9,13 @@ const STEPS = [
     number: "02",
     title: "Map the practical improvement",
     description:
-      "We identify the best-fit change—configuration, workflow design, reporting, automation, or a custom integration.",
+      "We identify the best-fit change—configuration, workflow design, reporting, or automation—and create a custom integration.",
   },
   {
     number: "03",
-    title: "Put the solution to work",
+    title: "Implement and support",
     description:
-      "We implement, test, and document the agreed improvement so your team can use it confidently in day-to-day operations.",
+      "We implement, test, and document your solution. We stand behind our work and provide ongoing support so your team can use it with confidence.",
   },
 ] as const;
 
@@ -38,7 +36,7 @@ export default function HowItWorks() {
           {STEPS.map((step) => (
             <div key={step.number} className="relative rounded-2xl border border-slate-100 bg-slate-50/50 p-8">
               <span
-                className="bg-gradient-to-br from-blue/30 to-teal-400/25 bg-clip-text text-6xl font-extrabold text-transparent"
+                className="bg-gradient-to-br from-blue to-navy bg-clip-text text-6xl font-extrabold text-transparent"
                 aria-hidden="true"
               >
                 {step.number}
@@ -53,13 +51,15 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="mt-14 text-center">
-          <a
-            href={CALENDLY_URL}
-            className="inline-flex rounded-sm bg-ink px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-colors hover:bg-navy-light"
-          >
-            Schedule a conversation
-          </a>
+        <div className="mx-auto mt-14 max-w-3xl border-t border-blue/20 pt-10 text-center">
+          <h3 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
+            Bring your next operational improvement into focus.
+          </h3>
+          <p className="mx-auto mt-4 max-w-xl leading-relaxed text-slate-600">
+            Tell us what your team is trying to accomplish. We&rsquo;ll talk
+            through the workflow, the systems involved, and the most practical
+            next step.
+          </p>
         </div>
       </div>
     </section>

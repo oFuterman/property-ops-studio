@@ -7,7 +7,6 @@ import WhatWeFix from "@/components/WhatWeFix";
 import CustomSystems from "@/components/CustomSystems";
 import Results from "@/components/Results";
 import About from "@/components/About";
-import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 const jsonLd = {
@@ -47,7 +46,6 @@ export default function Home() {
         <CustomSystems />
         <Results />
         <About />
-        <FinalCTA />
       </main>
       <Footer />
     </>
