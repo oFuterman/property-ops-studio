@@ -4,9 +4,23 @@ import Footer from "@/components/Footer";
 import { CALENDLY_EMBED_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Schedule a Conversation | Property Ops Studio",
+  title: "Schedule a Conversation",
   description:
     "Choose a convenient time to discuss your AppFolio operations with Property Ops Studio.",
+  alternates: { canonical: "/schedule" },
+  openGraph: {
+    title: "Schedule a Conversation | Property Ops Studio",
+    description:
+      "Discuss your AppFolio workflows, reporting needs, and integration opportunities with Property Ops Studio.",
+    url: "/schedule",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Schedule a Conversation | Property Ops Studio",
+    description:
+      "Discuss your AppFolio workflows, reporting needs, and integration opportunities with Property Ops Studio.",
+  },
 };
 
 const embedUrl = `${CALENDLY_EMBED_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=1e2325&primary_color=105ab6`;

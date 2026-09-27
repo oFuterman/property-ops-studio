@@ -5,40 +5,48 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SITE } from "@/lib/constants";
 
-const PDF_URL =
-  "/resources/extending-appfolio-max-building-access-control.pdf";
+const PDF_URL = "/resources/beyond-the-work-order-operational-exceptions.pdf";
 
 export const metadata: Metadata = {
-  title: "AppFolio Max and Building Access Control",
+  title: "Automating Operational Exceptions in Property Management",
   description:
-    "A Property Ops Studio case study connecting AppFolio Max with dormakaba Community access-management software and Comelit at a 118-unit property.",
-  alternates: { canonical: "/resources/appfolio-access-control" },
+    "A Property Ops Studio white paper about recognizing policy-sensitive AppFolio work orders, coordinating specialized responders, and improving management visibility.",
+  alternates: { canonical: "/resources/operational-exceptions" },
   openGraph: {
-    title: "AppFolio Max and Building Access Control | Property Ops Studio",
+    title:
+      "Beyond the Work Order: Automating Operational Exceptions | Property Ops Studio",
     description:
-      "A case study connecting AppFolio Max with dormakaba Community and Comelit while retaining existing access-control infrastructure.",
-    url: "/resources/appfolio-access-control",
+      "A practical model for recognizing, escalating, and documenting operational exceptions connected to AppFolio work orders.",
+    url: "/resources/operational-exceptions",
     type: "article",
     authors: [SITE.name],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AppFolio Max and Building Access Control | Property Ops Studio",
+    title:
+      "Beyond the Work Order: Automating Operational Exceptions | Property Ops Studio",
     description:
-      "A case study connecting AppFolio Max with dormakaba Community and Comelit while retaining existing access-control infrastructure.",
+      "A practical model for recognizing, escalating, and documenting operational exceptions connected to AppFolio work orders.",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  headline: "Extending AppFolio Max Into Building Access Control",
+  headline:
+    "Beyond the Work Order: Automating Operational Exceptions in Property Management",
   description: metadata.description,
-  url: `${SITE.url}/resources/appfolio-access-control`,
-  image: `${SITE.url}/images/resources/appfolio-access-control-cover.png`,
+  url: `${SITE.url}/resources/operational-exceptions`,
+  image: `${SITE.url}/images/resources/operational-exceptions-cover.png`,
   author: { "@type": "Organization", name: SITE.name, url: SITE.url },
   publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
-  about: ["AppFolio Max", "Building access control", "Property management automation"],
+  about: [
+    "AppFolio",
+    "Operational exceptions",
+    "Property management risk",
+    "Power Apps",
+    "Power Automate",
+  ],
   associatedMedia: {
     "@type": "MediaObject",
     contentUrl: `${SITE.url}${PDF_URL}`,
@@ -47,13 +55,13 @@ const jsonLd = {
 };
 
 const TAKEAWAYS = [
-  "Connect resident lifecycle information in AppFolio Max with routine access-control administration.",
-  "Retain serviceable dormakaba and Comelit infrastructure instead of replacing a complete installed system.",
-  "Reduce duplicate entry and dependence on every site employee remembering a separate access-system workflow.",
-  "Compare a focused, fixed-price integration with packaged platforms carrying continuing software fees.",
+  "Recognize policy-sensitive work orders through approved categories, indicators, keywords, and phrases.",
+  "Bring supervisors, regional managers, risk personnel, security teams, restoration contractors, vendors, and other specialized responders into the process sooner.",
+  "Keep ownership, activity, documentation, deadlines, and unresolved conditions visible beyond the site level.",
+  "Reduce missed handoffs, slow resident communication, avoidable move-outs, and the risk created by incomplete follow-up.",
 ] as const;
 
-export default function AccessControlWhitePaperPage() {
+export default function OperationalExceptionsWhitePaperPage() {
   return (
     <>
       <script
@@ -69,11 +77,12 @@ export default function AccessControlWhitePaperPage() {
                 White paper &amp; case study
               </p>
               <h1 className="mt-3 max-w-4xl text-3xl font-bold tracking-tight sm:text-5xl">
-                Extending AppFolio Max Into Building Access Control
+                Beyond the Work Order: Automating Operational Exceptions in
+                Property Management
               </h1>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
-                A case study for midsized property operators using dormakaba
-                Community software and Comelit.
+                Connecting AppFolio, Power Apps, SharePoint, Power Automate, and
+                specialized response workflows.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -96,8 +105,8 @@ export default function AccessControlWhitePaperPage() {
 
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="/images/resources/appfolio-access-control-cover.png"
-                alt="Cover of Extending AppFolio Max Into Building Access Control"
+                src="/images/resources/operational-exceptions-cover.png"
+                alt="Cover of Beyond the Work Order: Automating Operational Exceptions in Property Management"
                 width={1275}
                 height={1650}
                 priority
@@ -114,28 +123,27 @@ export default function AccessControlWhitePaperPage() {
                 Executive overview
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-                Connecting the resident record to physical access
+                Catch critical issues before they become expensive problems
               </h2>
               <div className="mt-6 space-y-5 leading-relaxed text-slate-600">
                 <p>
-                  AppFolio can hold the resident, lease, unit, move-in, and
-                  move-out information while a separate building system manages
-                  physical access. Without a dependable connection, staff must
-                  repeat resident lifecycle work in both systems.
+                  AppFolio work orders can contain mold or moisture language,
+                  safety concerns, major water or sewage damage, repeated
+                  unresolved conditions, and other issues that require more
+                  than an ordinary maintenance response.
                 </p>
                 <p>
-                  This paper examines a 118-unit Class A multifamily property
-                  with retail in Glendale, California. Property Ops Studio
-                  connected AppFolio Max with dormakaba Community Access
-                  Management Software while the property retained its existing
-                  dormakaba keyless-entry environment and Comelit video-entry
-                  system.
+                  This paper explains how an operational-exception workflow can
+                  recognize approved warning language, notify the appropriate
+                  people, preserve accountability, and keep the issue visible
+                  until the required follow-up is complete.
                 </p>
                 <p>
-                  The case study also considers operating consistency, staff
-                  training, recurring software fees, and when a focused
-                  integration may be preferable to replacing serviceable
-                  infrastructure with a broader packaged platform.
+                  The approach uses AppFolio as the property-management record
+                  and Microsoft 365 tools to support the specialized response.
+                  The result is faster coordination, clearer resident
+                  communication, fewer missed handoffs, and a stronger record
+                  if a dispute or claim occurs.
                 </p>
               </div>
             </div>
@@ -145,7 +153,10 @@ export default function AccessControlWhitePaperPage() {
               <ul className="mt-5 space-y-4">
                 {TAKEAWAYS.map((takeaway) => (
                   <li key={takeaway} className="flex gap-3 text-slate-700">
-                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue" aria-hidden="true" />
+                    <span
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue"
+                      aria-hidden="true"
+                    />
                     <span className="leading-relaxed">{takeaway}</span>
                   </li>
                 ))}
@@ -157,12 +168,12 @@ export default function AccessControlWhitePaperPage() {
         <section className="bg-blue-pale px-6 py-16 sm:py-20">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              Could your existing systems work better together?
+              Which critical issues need visibility beyond the site team?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-              Property Ops Studio helps qualified property-management teams
-              evaluate the workflow, integration options, and practical business
-              case before committing to a solution.
+              Property Ops Studio helps property-management companies turn
+              approved response policies into practical workflows that connect
+              the right people, documentation, and follow-through.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link

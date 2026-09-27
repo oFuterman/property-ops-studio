@@ -3,14 +3,47 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE } from "@/lib/constants";
 
 const PDF_URL =
   "/resources/extending-appfolio-max-custom-owner-reporting.pdf";
 
 export const metadata: Metadata = {
-  title: "AppFolio Max and Custom Owner Reporting | Property Ops Studio",
+  title: "AppFolio Max and Custom Owner Reporting",
   description:
     "A Property Ops Studio case study combining AppFolio earnings, recorded distributions, approved adjustments, and capital spending in one repeatable owner report.",
+  alternates: { canonical: "/resources/appfolio-owner-reporting" },
+  openGraph: {
+    title: "AppFolio Max and Custom Owner Reporting | Property Ops Studio",
+    description:
+      "A case study combining AppFolio earnings, recorded distributions, approved adjustments, and capital spending in one owner report.",
+    url: "/resources/appfolio-owner-reporting",
+    type: "article",
+    authors: [SITE.name],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AppFolio Max and Custom Owner Reporting | Property Ops Studio",
+    description:
+      "A case study combining AppFolio earnings, recorded distributions, approved adjustments, and capital spending in one owner report.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  headline: "Extending AppFolio Max Into Custom Owner Reporting",
+  description: metadata.description,
+  url: `${SITE.url}/resources/appfolio-owner-reporting`,
+  image: `${SITE.url}/images/resources/appfolio-owner-reporting-cover.png`,
+  author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+  publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+  about: ["AppFolio Max", "Owner reporting", "Property management accounting"],
+  associatedMedia: {
+    "@type": "MediaObject",
+    contentUrl: `${SITE.url}${PDF_URL}`,
+    encodingFormat: "application/pdf",
+  },
 };
 
 const TAKEAWAYS = [
@@ -23,6 +56,10 @@ const TAKEAWAYS = [
 export default function OwnerReportingWhitePaperPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <main id="main">
         <section className="bg-ink px-6 py-16 text-white sm:py-20">

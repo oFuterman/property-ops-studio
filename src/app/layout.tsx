@@ -11,7 +11,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: `${SITE.name} | ${SITE.tagline}`,
+  title: {
+    default: `${SITE.name} | ${SITE.tagline}`,
+    template: `%s | ${SITE.name}`,
+  },
   description: SITE.description,
   keywords: [
     "AppFolio consultant",
@@ -23,6 +26,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  authors: [{ name: SITE.name, url: SITE.url }],
+  creator: SITE.name,
+  publisher: SITE.name,
+  category: "Property management consulting",
   openGraph: {
     title: `${SITE.name} | ${SITE.tagline}`,
     description: SITE.description,
@@ -39,6 +46,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

@@ -4,9 +4,23 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Services | Property Ops Studio",
+  title: "Integration and Automation Services",
   description:
     "Property Ops Studio services for systems integration, automation, reporting, Microsoft 365 workflows, portals, cloud continuity, and AppFolio operations.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Integration and Automation Services | Property Ops Studio",
+    description:
+      "Systems integration, automation, reporting, Microsoft 365 workflows, portals, and AppFolio operations consulting.",
+    url: "/services",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Integration and Automation Services | Property Ops Studio",
+    description:
+      "Systems integration, automation, reporting, Microsoft 365 workflows, portals, and AppFolio operations consulting.",
+  },
 };
 
 const ENGINEERING_STACK = [

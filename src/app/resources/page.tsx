@@ -3,16 +3,66 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Resources | Property Ops Studio",
+  title: "Property Management Resources",
   description:
     "White papers and practical guidance for property management operations, AppFolio workflows, reporting, automation, and systems integration.",
+  alternates: { canonical: "/resources" },
+  openGraph: {
+    title: "Property Management Resources | Property Ops Studio",
+    description:
+      "White papers and practical guidance for AppFolio workflows, reporting, automation, and property-management systems integration.",
+    url: "/resources",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Property Management Resources | Property Ops Studio",
+    description:
+      "White papers and practical guidance for AppFolio workflows, reporting, automation, and property-management systems integration.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Property Management Resources",
+  url: `${SITE.url}/resources`,
+  description: metadata.description,
+  publisher: {
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.url,
+  },
+  hasPart: [
+    {
+      "@type": "Article",
+      headline: "Extending AppFolio Max Into Building Access Control",
+      url: `${SITE.url}/resources/appfolio-access-control`,
+    },
+    {
+      "@type": "Article",
+      headline: "Extending AppFolio Max Into Custom Owner Reporting",
+      url: `${SITE.url}/resources/appfolio-owner-reporting`,
+    },
+    {
+      "@type": "Article",
+      headline:
+        "Beyond the Work Order: Automating Operational Exceptions in Property Management",
+      url: `${SITE.url}/resources/operational-exceptions`,
+    },
+  ],
 };
 
 export default function ResourcesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <main id="main">
         <section
@@ -56,6 +106,49 @@ export default function ResourcesPage() {
               </div>
 
               <div className="space-y-7">
+                <article className="overflow-hidden rounded-2xl border border-blue/15 bg-white shadow-sm">
+                  <div className="grid sm:grid-cols-[190px_1fr]">
+                    <div className="flex items-center justify-center bg-slate-100 p-5">
+                      <Image
+                        src="/images/resources/operational-exceptions-cover.png"
+                        alt="Cover of Beyond the Work Order: Automating Operational Exceptions in Property Management"
+                        width={1275}
+                        height={1650}
+                        className="h-auto max-h-64 w-auto rounded-sm border border-slate-200 bg-white shadow-md"
+                      />
+                    </div>
+                    <div className="p-7 sm:p-8">
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue">
+                        White paper &amp; case study · September 2026
+                      </p>
+                      <h3 className="mt-3 text-2xl font-semibold leading-tight text-navy">
+                        Beyond the Work Order: Automating Operational Exceptions
+                      </h3>
+                      <p className="mt-4 leading-relaxed text-slate-600">
+                        A practical model for recognizing policy-sensitive
+                        AppFolio work orders, engaging specialized responders,
+                        and keeping critical issues visible through resolution.
+                      </p>
+                      <div className="mt-6 flex flex-wrap gap-3">
+                        <Link
+                          href="/resources/operational-exceptions"
+                          className="inline-flex rounded-sm bg-blue px-5 py-2.5 font-semibold text-white shadow-md shadow-blue/20 transition-colors hover:bg-navy-light"
+                        >
+                          Read the overview
+                        </Link>
+                        <a
+                          href="/resources/beyond-the-work-order-operational-exceptions.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex rounded-sm border border-blue px-5 py-2.5 font-semibold text-blue transition-colors hover:bg-blue-pale"
+                        >
+                          View PDF
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
                 <article className="overflow-hidden rounded-2xl border border-blue/15 bg-white shadow-sm">
                   <div className="grid sm:grid-cols-[190px_1fr]">
                     <div className="flex items-center justify-center bg-slate-100 p-5">
