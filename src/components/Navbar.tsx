@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { label: "What We Fix", href: "/#what-we-fix" },
   { label: "Custom Systems", href: "/#custom-systems" },
   { label: "Results", href: "/#results" },
+  { label: "Resources", href: "/resources" },
   { label: "About", href: "/#about" },
 ] as const;
 
@@ -45,7 +46,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 md:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
