@@ -3,20 +3,38 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { CALENDLY_URL } from "@/lib/constants";
 
-const NAV_LINKS = [
-  { label: "How It Works", href: "/#how-it-works" },
+type NavLink = {
+  label: string;
+  href: string;
+  /** Home-page section this link points at, used for scroll spying. */
+  section?: string;
+};
+
+const NAV_LINKS: readonly NavLink[] = [
   { label: "Services", href: "/services" },
-  { label: "What We Fix", href: "/#what-we-fix" },
-  { label: "Custom Systems", href: "/#custom-systems" },
-  { label: "Results", href: "/#results" },
+  { label: "How It Works", href: "/#how-it-works", section: "how-it-works" },
+  { label: "What We Fix", href: "/#what-we-fix", section: "what-we-fix" },
+  { label: "Custom Systems", href: "/#custom-systems", section: "custom-systems" },
+  { label: "Results", href: "/#results", section: "results" },
+  { label: "About", href: "/#about", section: "about" },
   { label: "Resources", href: "/resources" },
-  { label: "About", href: "/#about" },
-] as const;
+];
+
+const SECTION_IDS = NAV_LINKS.map((link) => link.section).filter(
+  (id): id is string => Boolean(id),
+);
+
+/** Distance below the viewport top at which a section counts as "the one you're reading". */
+const SPY_OFFSET = 96;
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -28,6 +46,53 @@ export default function Navbar() {
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
   }, [mobileOpen]);
+
+  // On the home page the highlighted link follows how far down the page you are.
+  useEffect(() => {
+    if (!isHome) return;
+
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
+      (el): el is HTMLElement => el !== null,
+    );
+
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      // The last section to have crossed the line is the one being read. Above the
+      // first section (the hero) nothing is highlighted.
+      let current: string | null = null;
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= SPY_OFFSET) current = section.id;
+      }
+      setActiveSection(current);
+    };
+
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    // Deferred rather than called inline so the first paint isn't a cascading render.
+    frame = requestAnimationFrame(update);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+
+    return () => {
+      if (frame) cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [isHome]);
+
+  // "page" for a whole route, "location" for a section inside the current page.
+  const currentFor = (link: NavLink): "page" | "location" =>
+    link.section ? "location" : "page";
+
+  const isActive = (link: NavLink) => {
+    if (link.section) return isHome && activeSection === link.section;
+    if (link.href === "/resources") return pathname.startsWith("/resources");
+    return pathname === link.href;
+  };
 
   return (
     <nav
@@ -47,19 +112,24 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-navy"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href={CALENDLY_URL}
-            className="btn-brand px-5 py-2.5 text-sm"
-          >
+          {NAV_LINKS.map((link) => {
+            const active = isActive(link);
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                aria-current={active ? currentFor(link) : undefined}
+                className={
+                  active
+                    ? "nav-active relative text-sm after:absolute after:inset-x-0 after:-bottom-1.5 after:h-0.5 after:rounded-full after:bg-gradient-to-r after:from-blue after:to-teal-500 after:content-['']"
+                    : "text-sm font-medium text-slate-600 transition-colors hover:text-navy"
+                }
+              >
+                {link.label}
+              </a>
+            );
+          })}
+          <a href={CALENDLY_URL} className="btn-brand px-5 py-2.5 text-sm">
             Schedule a conversation
           </a>
         </div>
@@ -87,16 +157,24 @@ export default function Navbar() {
       {mobileOpen && (
         <div id="mobile-menu" className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
           <div className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-base font-medium text-slate-600 transition-colors hover:text-navy"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const active = isActive(link);
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? currentFor(link) : undefined}
+                  className={
+                    active
+                      ? "nav-active relative pl-4 text-base before:absolute before:inset-y-0 before:left-0 before:w-0.5 before:rounded-full before:bg-gradient-to-b before:from-blue before:to-teal-500 before:content-['']"
+                      : "text-base font-medium text-slate-600 transition-colors hover:text-navy"
+                  }
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
             <a
               href={CALENDLY_URL}
               className="btn-brand mt-2 px-5 py-2.5 text-sm"

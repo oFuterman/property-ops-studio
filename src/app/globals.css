@@ -105,6 +105,20 @@ body {
   }
 }
 
+/* Active navigation link — the brand ramp painted through the text itself.
+   Ends on the deep teal step so the tail of the word still clears AA. */
+@utility nav-active {
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue) 0%,
+    var(--color-teal-700) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
 /* Skip-to-content link — visible only on keyboard focus */
 .skip-link {
   position: absolute;
