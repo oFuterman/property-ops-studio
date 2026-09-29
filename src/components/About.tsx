@@ -68,13 +68,6 @@ export default function About() {
               >
                 LinkedIn profile
               </a>
-              <address className="mt-3 text-sm not-italic leading-relaxed text-slate-500">
-                19128 112th Ave. NE, Unit 502
-                <br />
-                Bothell, WA 98011
-                <br />
-                United States of America
-              </address>
             </div>
           </div>
         </div>
