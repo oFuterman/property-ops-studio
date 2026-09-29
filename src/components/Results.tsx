@@ -13,8 +13,8 @@ export default function Results() {
         </div>
 
         {/* Managed Wi-Fi integration overview */}
-        <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-ink px-8 py-8 text-center text-white shadow-xl shadow-ink/15 sm:flex-row sm:text-left">
-          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-blue text-white shadow-lg shadow-black/20">
+        <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-gradient-to-br from-ink via-navy to-blue px-8 py-8 text-center text-white shadow-xl shadow-ink/15 sm:flex-row sm:text-left">
+          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue to-teal-600 text-white shadow-lg shadow-black/20">
             <svg
               className="h-11 w-11"
               viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export default function Results() {
         </div>
 
         {/* Case narrative */}
-        <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-blue/15 bg-gradient-to-br from-slate-50 via-blue-pale/70 to-white p-8">
+        <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-teal-400/25 bg-gradient-to-br from-slate-50 via-blue-pale/70 to-teal-pale p-8">
           <h3 className="text-xl font-semibold text-navy">
             Turning managed Wi-Fi into a stronger profit center
           </h3>
@@ -72,7 +72,7 @@ export default function Results() {
               work for property managers, and a documented solution that
               non-technical staff can support.
             </p>
-            <blockquote className="mt-6 border-l-4 border-blue bg-white/80 px-6 py-4 shadow-sm">
+            <blockquote className="relative mt-6 bg-white/80 px-6 py-4 pl-7 shadow-sm before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-gradient-to-b before:from-blue before:to-teal-400 before:content-['']">
               <p className="text-2xl font-semibold italic text-navy">
                 &ldquo;Amazing.&rdquo;
               </p>

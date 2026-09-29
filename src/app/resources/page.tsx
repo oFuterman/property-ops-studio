@@ -66,12 +66,12 @@ export default function ResourcesPage() {
       <Navbar />
       <main id="main">
         <section
-          className="bg-ink px-6 py-16 text-white sm:py-20"
+          className="relative overflow-hidden bg-gradient-to-br from-ink via-navy to-teal-700 px-6 py-16 text-white sm:py-20 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-teal-400/60 after:to-transparent after:content-['']"
           aria-labelledby="resources-heading"
         >
-          <div className="mx-auto max-w-6xl">
+          <div className="relative mx-auto max-w-6xl">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-light">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-300">
                 Resources
               </p>
               <h1
@@ -89,7 +89,7 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-        <section className="bg-blue-pale px-6 py-16 sm:py-20">
+        <section className="bg-gradient-to-b from-blue-pale via-white to-teal-pale px-6 py-16 sm:py-20">
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
               <div>
@@ -106,9 +106,9 @@ export default function ResourcesPage() {
               </div>
 
               <div className="space-y-7">
-                <article className="overflow-hidden rounded-2xl border border-blue/15 bg-white shadow-sm">
+                <article className="overflow-hidden rounded-2xl border border-teal-400/25 bg-white shadow-sm transition-shadow hover:shadow-md hover:shadow-teal-500/10">
                   <div className="grid sm:grid-cols-[190px_1fr]">
-                    <div className="flex items-center justify-center bg-slate-100 p-5">
+                    <div className="flex items-center justify-center bg-gradient-to-br from-slate-100 to-teal-pale p-5">
                       <Image
                         src="/images/resources/operational-exceptions-cover.png"
                         alt="Cover of Beyond the Work Order: Automating Operational Exceptions in Property Management"
@@ -132,7 +132,7 @@ export default function ResourcesPage() {
                       <div className="mt-6 flex flex-wrap gap-3">
                         <Link
                           href="/resources/operational-exceptions"
-                          className="inline-flex rounded-sm bg-blue px-5 py-2.5 font-semibold text-white shadow-md shadow-blue/20 transition-colors hover:bg-navy-light"
+                          className="btn-brand px-5 py-2.5"
                         >
                           Read the overview
                         </Link>
@@ -140,7 +140,7 @@ export default function ResourcesPage() {
                           href="/resources/beyond-the-work-order-operational-exceptions.pdf"
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex rounded-sm border border-blue px-5 py-2.5 font-semibold text-blue transition-colors hover:bg-blue-pale"
+                          className="btn-brand-outline px-5 py-2.5"
                         >
                           View PDF
                         </a>
@@ -149,9 +149,9 @@ export default function ResourcesPage() {
                   </div>
                 </article>
 
-                <article className="overflow-hidden rounded-2xl border border-blue/15 bg-white shadow-sm">
+                <article className="overflow-hidden rounded-2xl border border-teal-400/25 bg-white shadow-sm transition-shadow hover:shadow-md hover:shadow-teal-500/10">
                   <div className="grid sm:grid-cols-[190px_1fr]">
-                    <div className="flex items-center justify-center bg-slate-100 p-5">
+                    <div className="flex items-center justify-center bg-gradient-to-br from-slate-100 to-teal-pale p-5">
                       <Image
                         src="/images/resources/appfolio-access-control-cover.png"
                         alt="Cover of Extending AppFolio Max Into Building Access Control"
@@ -175,7 +175,7 @@ export default function ResourcesPage() {
                       <div className="mt-6 flex flex-wrap gap-3">
                         <Link
                           href="/resources/appfolio-access-control"
-                          className="inline-flex rounded-sm bg-blue px-5 py-2.5 font-semibold text-white shadow-md shadow-blue/20 transition-colors hover:bg-navy-light"
+                          className="btn-brand px-5 py-2.5"
                         >
                           Read the overview
                         </Link>
@@ -183,7 +183,7 @@ export default function ResourcesPage() {
                           href="/resources/extending-appfolio-max-building-access-control.pdf"
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex rounded-sm border border-blue px-5 py-2.5 font-semibold text-blue transition-colors hover:bg-blue-pale"
+                          className="btn-brand-outline px-5 py-2.5"
                         >
                           View PDF
                         </a>
@@ -192,9 +192,9 @@ export default function ResourcesPage() {
                   </div>
                 </article>
 
-                <article className="overflow-hidden rounded-2xl border border-blue/15 bg-white shadow-sm">
+                <article className="overflow-hidden rounded-2xl border border-teal-400/25 bg-white shadow-sm transition-shadow hover:shadow-md hover:shadow-teal-500/10">
                   <div className="grid sm:grid-cols-[190px_1fr]">
-                    <div className="flex items-center justify-center bg-slate-100 p-5">
+                    <div className="flex items-center justify-center bg-gradient-to-br from-slate-100 to-teal-pale p-5">
                       <Image
                         src="/images/resources/appfolio-owner-reporting-cover.png"
                         alt="Cover of Extending AppFolio Max Into Custom Owner Reporting"
@@ -218,7 +218,7 @@ export default function ResourcesPage() {
                       <div className="mt-6 flex flex-wrap gap-3">
                         <Link
                           href="/resources/appfolio-owner-reporting"
-                          className="inline-flex rounded-sm bg-blue px-5 py-2.5 font-semibold text-white shadow-md shadow-blue/20 transition-colors hover:bg-navy-light"
+                          className="btn-brand px-5 py-2.5"
                         >
                           Read the overview
                         </Link>
@@ -226,7 +226,7 @@ export default function ResourcesPage() {
                           href="/resources/extending-appfolio-max-custom-owner-reporting.pdf"
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex rounded-sm border border-blue px-5 py-2.5 font-semibold text-blue transition-colors hover:bg-blue-pale"
+                          className="btn-brand-outline px-5 py-2.5"
                         >
                           View PDF
                         </a>

@@ -17,7 +17,8 @@ export function createOpenGraphImage({
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #061a33 0%, #0b2f67 100%)",
+          background:
+            "linear-gradient(135deg, #12181C 0%, #042257 45%, #0B5F66 100%)",
           color: "white",
           display: "flex",
           flexDirection: "column",
@@ -30,7 +31,7 @@ export function createOpenGraphImage({
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              color: "#6fb2ff",
+              color: "#5EEAD4",
               fontSize: 24,
               fontWeight: 700,
               letterSpacing: "0.14em",
@@ -70,7 +71,7 @@ export function createOpenGraphImage({
         <div
           style={{
             alignItems: "center",
-            borderTop: "2px solid rgba(111,178,255,.45)",
+            borderTop: "2px solid rgba(45,212,191,.45)",
             display: "flex",
             fontSize: 24,
             fontWeight: 700,

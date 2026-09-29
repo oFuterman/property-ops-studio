@@ -32,7 +32,7 @@ export default function SchedulePage() {
       <main id="main" className="min-h-screen bg-slate-50 px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-light">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue">
               Schedule a conversation
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-ink sm:text-5xl">
@@ -44,7 +44,7 @@ export default function SchedulePage() {
             </p>
           </div>
 
-          <div className="mt-10 overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-200/50">
+          <div className="mt-10 overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-200/50 before:block before:h-1 before:bg-gradient-to-r before:from-blue before:via-blue-light before:to-teal-400 before:content-['']">
             <iframe
               title="Schedule a conversation with Property Ops Studio"
               src={embedUrl}

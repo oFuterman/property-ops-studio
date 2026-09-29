@@ -44,7 +44,7 @@ export default function About() {
               faster, or better connected, let&rsquo;s talk.
             </p>
 
-            <div className="mt-8 border-l-2 border-blue pl-5">
+            <div className="relative mt-8 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-0.5 before:bg-gradient-to-b before:from-blue before:to-teal-400 before:content-['']">
               <p className="font-semibold text-navy">Contact Omer</p>
               <a
                 href="mailto:omerfu@gmail.com"
@@ -90,7 +90,7 @@ export default function About() {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-3">
-            <article className="border-l-2 border-blue pl-6">
+            <article className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-0.5 before:bg-gradient-to-b before:from-blue before:to-teal-400 before:content-['']">
               <h4 className="text-xl font-bold text-navy">Ron Nasch</h4>
               <p className="mt-1 font-semibold text-blue">
                 Senior Property Operations Advisor
@@ -102,7 +102,7 @@ export default function About() {
               </p>
             </article>
 
-            <article className="border-l-2 border-slate-300 pl-6">
+            <article className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-0.5 before:bg-slate-300 before:content-['']">
               <h4 className="text-xl font-bold text-navy">Tamar Shinar, Ph.D.</h4>
               <p className="mt-1 font-semibold text-slate-500">
                 Personal Mentor and Professional Resource
@@ -114,7 +114,7 @@ export default function About() {
               </p>
             </article>
 
-            <article className="border-l-2 border-slate-300 pl-6">
+            <article className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-0.5 before:bg-slate-300 before:content-['']">
               <h4 className="text-xl font-bold text-navy">Ganit Paul</h4>
               <p className="mt-1 font-semibold text-slate-500">
                 Personal Mentor and Professional Resource

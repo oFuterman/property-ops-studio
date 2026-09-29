@@ -62,10 +62,10 @@ export default function OwnerReportingWhitePaperPage() {
       />
       <Navbar />
       <main id="main">
-        <section className="bg-ink px-6 py-16 text-white sm:py-20">
+        <section className="relative overflow-hidden bg-gradient-to-br from-ink via-navy to-teal-700 px-6 py-16 text-white sm:py-20 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-teal-400/60 after:to-transparent after:content-['']">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_280px] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-light">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-300">
                 White paper &amp; case study
               </p>
               <h1 className="mt-3 max-w-4xl text-3xl font-bold tracking-tight sm:text-5xl">
@@ -80,7 +80,7 @@ export default function OwnerReportingWhitePaperPage() {
                   href={PDF_URL}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex rounded-sm bg-blue px-6 py-3 font-semibold text-white shadow-lg shadow-blue/20 transition-colors hover:bg-blue-light"
+                  className="btn-brand px-6 py-3"
                 >
                   View the full paper
                 </a>
@@ -139,13 +139,13 @@ export default function OwnerReportingWhitePaperPage() {
               </div>
             </div>
 
-            <aside className="rounded-2xl border border-blue/15 bg-blue-pale p-7 sm:p-8">
+            <aside className="rounded-2xl border border-teal-400/25 bg-gradient-to-br from-blue-pale to-teal-pale p-7 sm:p-8">
               <h2 className="text-2xl font-semibold text-navy">Key takeaways</h2>
               <ul className="mt-5 space-y-4">
                 {TAKEAWAYS.map((takeaway) => (
                   <li key={takeaway} className="flex gap-3 text-slate-700">
                     <span
-                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue"
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gradient-to-r from-blue to-teal-400"
                       aria-hidden="true"
                     />
                     <span className="leading-relaxed">{takeaway}</span>
@@ -156,7 +156,7 @@ export default function OwnerReportingWhitePaperPage() {
           </div>
         </section>
 
-        <section className="bg-blue-pale px-6 py-16 sm:py-20">
+        <section className="bg-gradient-to-b from-blue-pale via-white to-teal-pale px-6 py-16 sm:py-20">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
               What owner question takes too many reports to answer?
@@ -169,13 +169,13 @@ export default function OwnerReportingWhitePaperPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link
                 href="/schedule"
-                className="inline-flex rounded-sm bg-blue px-7 py-3.5 font-semibold text-white shadow-lg shadow-blue/20 transition-colors hover:bg-navy-light"
+                className="btn-brand px-7 py-3.5"
               >
                 Schedule a conversation
               </Link>
               <Link
                 href="/resources"
-                className="inline-flex rounded-sm border border-blue px-7 py-3.5 font-semibold text-blue transition-colors hover:bg-white"
+                className="btn-brand-outline px-7 py-3.5"
               >
                 Back to resources
               </Link>

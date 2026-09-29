@@ -50,8 +50,8 @@ export default function CustomSystems() {
               with less and avoid the cost of moving to an entirely new
               platform.
             </p>
-            <div className="relative mt-8 overflow-hidden rounded-2xl border border-blue-light/60 bg-gradient-to-br from-blue-light via-blue to-navy px-8 py-7 text-white shadow-[0_16px_35px_-14px_rgba(4,34,87,0.7),inset_0_1px_0_rgba(255,255,255,0.35)]">
-              <span className="absolute inset-y-0 left-0 w-2 bg-ink" aria-hidden="true" />
+            <div className="relative mt-8 overflow-hidden rounded-2xl border border-teal-400/40 bg-gradient-to-br from-navy via-blue to-teal-700 px-8 py-7 text-white shadow-[0_16px_35px_-14px_rgba(4,34,87,0.7),inset_0_1px_0_rgba(255,255,255,0.35)]">
+              <span className="absolute inset-y-0 left-0 w-2 bg-gradient-to-b from-teal-300 to-blue" aria-hidden="true" />
               <p className="text-sm font-bold uppercase tracking-[0.16em] text-white/70">
                 Imagine the possibility
               </p>
@@ -70,10 +70,10 @@ export default function CustomSystems() {
             {CAPABILITIES.map((cap) => (
               <div
                 key={cap.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 transition-all hover:border-blue/20 hover:shadow-md hover:shadow-blue/5"
+                className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 transition-all hover:border-teal-400/40 hover:shadow-md hover:shadow-teal-500/10"
               >
                 <h3 className="flex items-center gap-2 font-semibold text-navy">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-blue" aria-hidden="true" />
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-blue to-teal-400" aria-hidden="true" />
                   {cap.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">

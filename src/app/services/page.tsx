@@ -64,10 +64,10 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <main id="main">
-        <section className="bg-ink px-6 py-16 text-white sm:py-20" aria-labelledby="technical-services-heading">
-          <div className="mx-auto max-w-6xl">
+        <section className="relative overflow-hidden bg-gradient-to-br from-ink via-navy to-teal-700 px-6 py-16 text-white sm:py-20 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-teal-400/60 after:to-transparent after:content-['']" aria-labelledby="technical-services-heading">
+          <div className="relative mx-auto max-w-6xl">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-light">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-300">
                 Technical services
               </p>
               <h1 id="technical-services-heading" className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -82,8 +82,8 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="mt-10 rounded-2xl border border-blue-light/40 bg-navy/70 p-7 shadow-lg shadow-black/10 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-blue-light">
+            <div className="mt-10 rounded-2xl border border-teal-400/30 bg-navy/70 p-7 shadow-lg shadow-black/10 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-teal-300">
                 Omer&rsquo;s engineering stack
               </p>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -98,7 +98,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="bg-blue-pale px-6 py-16 sm:py-20" aria-labelledby="capabilities-heading">
+        <section className="bg-gradient-to-b from-blue-pale via-white to-teal-pale px-6 py-16 sm:py-20" aria-labelledby="capabilities-heading">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue">
@@ -117,8 +117,8 @@ export default function ServicesPage() {
 
             <ul className="grid gap-4 sm:grid-cols-2">
               {CAPABILITIES.map((capability) => (
-                <li key={capability} className="flex gap-3 rounded-xl border border-blue/10 bg-white p-5 text-slate-700 shadow-sm">
-                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue" aria-hidden="true" />
+                <li key={capability} className="flex gap-3 rounded-xl border border-teal-400/20 bg-white p-5 text-slate-700 shadow-sm">
+                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-gradient-to-r from-blue to-teal-400" aria-hidden="true" />
                   <span className="leading-relaxed">{capability}</span>
                 </li>
               ))}
@@ -138,7 +138,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/schedule"
-              className="mt-8 inline-flex rounded-sm bg-blue px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue/20 transition-colors hover:bg-blue-light"
+              className="btn-brand mt-8 px-8 py-3.5"
             >
               Schedule a conversation
             </Link>

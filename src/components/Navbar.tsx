@@ -31,13 +31,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md"
+      className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md after:absolute after:inset-x-0 after:-bottom-px after:h-px after:bg-gradient-to-r after:from-transparent after:via-teal-400/50 after:to-transparent after:content-['']"
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/images/logo.webp"
+            src="/images/logo.png"
             alt="Property Ops Studio"
             width={220}
             height={48}
@@ -58,7 +58,7 @@ export default function Navbar() {
           ))}
           <a
             href={CALENDLY_URL}
-            className="rounded-sm bg-ink px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
+            className="btn-brand px-5 py-2.5 text-sm"
           >
             Schedule a conversation
           </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
             ))}
             <a
               href={CALENDLY_URL}
-              className="mt-2 rounded-sm bg-ink px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-navy-light"
+              className="btn-brand mt-2 px-5 py-2.5 text-sm"
             >
               Schedule a conversation
             </a>

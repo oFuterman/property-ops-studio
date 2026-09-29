@@ -36,7 +36,7 @@ export default function HowItWorks() {
           {STEPS.map((step) => (
             <div key={step.number} className="relative rounded-2xl border border-slate-100 bg-slate-50/50 p-8">
               <span
-                className="bg-gradient-to-br from-blue to-navy bg-clip-text text-6xl font-extrabold text-transparent"
+                className="bg-gradient-to-br from-blue via-blue-light to-teal-400 bg-clip-text text-6xl font-extrabold text-transparent"
                 aria-hidden="true"
               >
                 {step.number}
@@ -51,7 +51,7 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="mx-auto mt-14 max-w-3xl border-t border-blue/20 pt-10 text-center">
+        <div className="relative mx-auto mt-14 max-w-3xl pt-10 text-center before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-teal-400/60 before:to-transparent before:content-['']">
           <h3 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
             Bring your next operational improvement into focus.
           </h3>

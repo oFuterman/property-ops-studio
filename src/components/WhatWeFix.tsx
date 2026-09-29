@@ -51,10 +51,10 @@ export default function WhatWeFix() {
           {SERVICES.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-blue/20 hover:shadow-md hover:shadow-blue/5"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-teal-400/40 hover:shadow-md hover:shadow-teal-500/10"
             >
               <h3 className="flex items-center gap-2 font-semibold text-navy">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-blue" aria-hidden="true" />
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-blue to-teal-400" aria-hidden="true" />
                 {service.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
